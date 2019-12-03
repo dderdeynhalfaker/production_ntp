@@ -1,0 +1,19 @@
+{
+  "name": "pbg_ntp",
+  "version": "0.1.4",
+  "author": "DDerdeyn Halfaker",
+  "summary": "Example module to manage NTP",
+  "license": "Apache-2.0",
+  "source": "https://github.com/dderdeynhalfaker/production_ntp.git",
+  "project_page": "https://github.com/dderdeynhalfaker/production_ntp",
+  "tags": ["ntp"],
+  "dependencies": [
+    { "name":"puppetlabs/stdlib", "version_requirement": ">= 4.17.0 < 5.0.0" }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RHEL",
+      "operatingsystemrelease": [ "7.00" ]
+    }
+  ]
+}
