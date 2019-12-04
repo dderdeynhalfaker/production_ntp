@@ -1,5 +1,5 @@
 {
-  "name": "pbg_ntp",
+  "name": "production_ntp",
   "version": "0.1.4",
   "author": "DDerdeyn Halfaker",
   "summary": "Example module to manage NTP",
