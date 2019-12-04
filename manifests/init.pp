@@ -1,14 +1,14 @@
 # Manage NTP
 class production_ntp {
-  ensure_packages(['ntp'])
+  ensure_packages(['ntpd'])
 
   file { '/etc/ntp.conf':
     source  => 'puppet:///modules/production_ntp/ntp.conf',
-    notify  => Service['ntp'],
-    require => Package['ntp'],
+    notify  => Service['ntpd'],
+    require => Package['ntpd'],
   }
 
-  service { 'ntp':
+  service { 'ntpd':
     ensure => running,
     enable => true,
   }
